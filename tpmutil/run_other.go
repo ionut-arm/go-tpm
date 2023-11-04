@@ -21,6 +21,8 @@ import (
 	"io"
 	"net"
 	"os"
+
+	"github.com/ionut-arm/go-tpm/tpmutil/mssim"
 )
 
 // OpenTPM opens a channel to the TPM at the given path. If the file is a
@@ -44,7 +46,10 @@ func OpenTPM(path string) (io.ReadWriteCloser, error) {
 	} else if fi.Mode()&os.ModeSocket != 0 {
 		rwc = NewEmulatorReadWriteCloser(path)
 	} else {
-		return nil, fmt.Errorf("unsupported TPM file mode %s", fi.Mode().String())
+		rwc, err = mssim.Open(mssim.Config{})
+		if err != nil {
+			return nil, fmt.Errorf("unsupported TPM file mode %s", fi.Mode().String())
+		}
 	}
 
 	return rwc, nil

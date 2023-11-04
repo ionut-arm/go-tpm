@@ -29,7 +29,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/google/go-tpm/tpmutil"
+	"github.com/ionut-arm/go-tpm/tpmutil"
 )
 
 // GetKeys gets the list of handles for currently-loaded TPM keys.

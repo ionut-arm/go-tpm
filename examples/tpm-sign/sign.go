@@ -23,7 +23,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/google/go-tpm/tpm"
+	"github.com/ionut-arm/go-tpm/tpm"
 )
 
 func signAction() {

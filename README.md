@@ -22,7 +22,7 @@ spec.
 The `direct` directory contains the prototype "TPMDirect" TPM 2.0 API, which is
 intended to (eventually) be 1:1 with the TPM 2.0 spec. Please report issues,
 complaints, or suggestions using the label
-https://github.com/google/go-tpm/labels/tpmdirect.
+https://github.com/ionut-arm/go-tpm/labels/tpmdirect.
 
 ## TPM 1.2
 
@@ -33,5 +33,5 @@ As such, TPM 1.2 library is in "maintenance" mode - all PRs with new
 functionality or non-critical fixes will be rejected.
 
 **If you'd like to volunteer to maintain the TPM 1.2 library, you can do so via
-an [issue](https://github.com/google/go-tpm/issues).** You don't have to be a
+an [issue](https://github.com/ionut-arm/go-tpm/issues).** You don't have to be a
 Googler to volunteer.

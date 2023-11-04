@@ -4,9 +4,9 @@ import (
 	"errors"
 	"testing"
 
-	. "github.com/google/go-tpm/tpm2"
-	"github.com/google/go-tpm/tpm2/transport"
-	"github.com/google/go-tpm/tpm2/transport/simulator"
+	. "github.com/ionut-arm/go-tpm/tpm2"
+	"github.com/ionut-arm/go-tpm/tpm2/transport"
+	"github.com/ionut-arm/go-tpm/tpm2/transport/simulator"
 )
 
 // Test creating a sealed data blob on the standard-template EK using its policy.

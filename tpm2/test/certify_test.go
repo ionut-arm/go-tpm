@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	. "github.com/google/go-tpm/tpm2"
-	"github.com/google/go-tpm/tpm2/transport/simulator"
+	. "github.com/ionut-arm/go-tpm/tpm2"
+	"github.com/ionut-arm/go-tpm/tpm2/transport/simulator"
 )
 
 func TestCertify(t *testing.T) {
